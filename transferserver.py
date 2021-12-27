@@ -1,9 +1,24 @@
-import requests, json, time, colorama, datetime
+import requests, json, time, colorama, datetime, os, subprocess
 from colorama import Fore
 
 colorama.init()
 with open('config.json') as f:
     data = json.load(f)
+
+os.system('mode con: cols=50 lines=20')
+os.system('cls')
+print(Fore.BLUE + '''
+            ██████  ██░ ██  ██▓▄▄▄█████▓
+          ▒██    ▒ ▓██░ ██▒▓██▒▓  ██▒ ▓▒
+          ░ ▓██▄   ▒██▀▀██░▒██▒▒ ▓██░ ▒░
+            ▒   ██▒░▓█ ░██ ░██░░ ▓██▓ ░ 
+          ▒██████▒▒░▓█▒░██▓░██░  ▒██▒ ░ 
+          ▒ ▒▓▒ ▒ ░ ▒ ░░▒░▒░▓    ▒ ░░   
+          ░ ░▒  ░ ░ ▒ ░▒░ ░ ▒ ░    ░    
+          ░  ░  ░   ░  ░░ ░ ▒ ░  ░      
+          ░   ░  ░  ░ ░           
+                              
+''' + Fore.RESET)
 
 serverid = int(input("Enter Guild ID: "))
 ownerid = input("Enter Owner ID: ")
@@ -15,7 +30,7 @@ proxyurl = data["customPROXY-URL"]
 
 headers = {
 	"authorization": token,
-	"content-type": "application/json",
+    "content-type": "application/json",
 	"User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) discord/1.0.1011 Chrome/91.0.4472.164 Electron/13.4.0 Safari/537.36"
 }
 
@@ -23,7 +38,7 @@ paylod = {
 	"owner_id": ownerid
 }
 
-proxies = dict(https='socks5://185.176.58.20:1080')
+proxies = dict(https='socks5://5.42.158.107:1080')
 proxiesr = dict(https=f'socks5://{proxyurl}')
 
 time.sleep(timer)

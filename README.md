@@ -3,3 +3,6 @@
 - using User Token
 - elapsed time feature
 - sleep feature before transfer
+
+# WATCH-OUT
+you know that shit, its for educational purposes only, bla bla bla against Discord ToS

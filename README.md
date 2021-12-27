@@ -1,5 +1,5 @@
 # transfer-server
-- Transfer a server to a other user using discords user api and python
-- Using User Token
-- Elapsed time feature
-- Sleep feature before transfer
+- transfer a server to a other user using discords user api and python
+- using User Token
+- elapsed time feature
+- sleep feature before transfer

@@ -1,4 +1,4 @@
-# transfer-server
+# Discord Transfer-Server Tool
 - transfer a server to a other user using discords user api and python
 - using user token
 - elapsed time feature
